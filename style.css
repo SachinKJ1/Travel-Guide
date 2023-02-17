@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    height: 45rem;
+    background-image: url(./images/travel/bgimgheader.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Julee', cursive;
+    overflow: hidden;
+    
+  }
+  header .headcontent {
+    font-size: 4rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    color: white;
+    font-family: 'Pacifico', cursive;
+  }.hoverlink{
+    color: white;
+    
+  }
+  .hoverlink:hover{
+    color: yellow;
+   
+   text-decoration: underline;
+  }
+  .iconimgtop {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+  }.beachimg{
+    width: 100%;
+    height: 18rem;
+  }.nav-tabs .nav-link.active{
+    font-weight: bolder;
+  }
+  .nav-tabs .nav-link{
+    color: black;
+  }.Exploreimg{
+    width: 100%;
+    height: 20rem;
+  }.explorediv{
+    position: relative;
+  }.explorebtn{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .appdownbtn{
+    width: 12rem;
+  }.footerlink{
+    color: black;
+  }.footerlink:hover{
+    border-bottom: 1px solid black;
+  }
+  @media (max-width:1266px){
+    .knowcard{
+      height: 5rem;
+      width: 100%;
+    }
+  }
+  @media (max-width:970px){
+    header .headcontent{
+      font-size: 3rem;
+    }.knowcard{
+      height: 4rem;
+      width: 100%;
+    }
+  }@media (max-width:760px){
+    header{
+      height: 30rem;
+    }
+    header .headcontent{
+      font-size: 2rem;
+      margin-top: 5rem;
+    margin-bottom: 2rem;
+    }
+  }
+  @media (max-width:420px){
+    header{
+      height: 30rem;
+    }.navlinksize{
+      font-size: 70%;
+    }
+    header .headcontent{
+      font-size: 1.8rem;
+      margin-top: 3rem;
+    margin-bottom: 2rem;
+    }
+  }

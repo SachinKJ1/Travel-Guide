@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Guide</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+    crossorigin="anonymous"
+  />
+  <style>
+      header {
+    height: 30rem;
+    background-image: url(./images/travel/visainformation.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Julee', cursive;
+    overflow: hidden;
+  }.hoverlink{
+    color: white;
+    
+  }
+  .hoverlink:hover{
+    color: yellow;
+   
+   text-decoration: underline;
+  }
+     .iconimgtop {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+     }.visaPara{
+        text-align: justify;
+     }  .appdownbtn{
+    width: 12rem;
+  }.footerlink{
+    color: black;
+  }.footerlink:hover{
+    border-bottom: 1px solid black;
+  }.radiobtnstyle{
+    width: 7rem;
+  }.selectstyle{
+    width: 21rem;
+  }@media (max-width:1200px){
+  .selectstyle{
+    width: 18rem;
+  }
+  }
+  </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img
+                  class="iconimgtop"
+                  src="./images/travel/icontopleft.jpg"
+                  alt="ERROR"
+                />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
+                  <li class="nav-item me-4">
+                    <a class="nav-link hoverlink" aria-current="page" href="visaInformation.html"
+                      >Visa Information</a
+                    >
+                  </li>
+                  <li class="nav-item me-4">
+                    <a class="nav-link hoverlink" href="getingAround.html">Getting Around</a>
+                  </li>
+                  <li class="nav-item me-4">
+                    <a class="nav-link hoverlink" href="dealsOffers.html">Deals & Offers</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link hoverlink" href="#foot">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!-- modal -->
+    <div
+         class="modal fade"
+         id="newModal"
+         data-bs-backdrop="static"
+         data-bs-keyboard="false"
+         tabindex="-1"
+         aria-labelledby="staticBackdropLabel"
+         aria-hidden="true"
+       >
+         <div class="modal-dialog">
+           <div class="modal-content">
+             <div class="modal-header">
+               <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                 Sign in to Continue
+               </h1>
+               <button
+                 type="button"
+                 class="btn-close"
+                 data-bs-dismiss="modal"
+                 aria-label="Close"
+               ></button>
+             </div>
+             <div class="modal-body">
+               <form>
+                 <div class="mb-3">
+                   <input
+                     type="text"
+                     class="form-control"
+                     id="exampleInputEmail1"
+                     aria-describedby="emailHelp"
+                     placeholder="Name"
+                   />
+                 </div>
+                 <div class=" mb-3">
+                   <input
+                     type="email"
+                     class="form-control mb-3"
+                     id="exampleInputPassword1"
+                     placeholder="Email"
+                   />
+                   
+                   <input
+                     type="password"
+                     class="form-control mb-3"
+                     id="exampleInputPassword1"
+                     placeholder="password"
+                   />
+                   <input
+                     type="password"
+                     class="form-control mb-3"
+                     id="exampleInputPassword1"
+                     placeholder="Re-enter password"
+                   />
+                   
+                 </div>
+                 <div class="mb-3 form-check"></div>
+               </form>
+             </div>
+             <div class="modal-footer">
+               <button
+                 type="button"
+                 class="btn btn-secondary"
+                 data-bs-dismiss="modal"
+               >
+                 Close
+               </button>
+               <button type="button" class="btn btn-primary">Submit</button>
+             </div>
+           </div>
+         </div>
+       </div>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <h1>Visas</h1>
+            </div>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8 text-center">
+                <p class="visaPara">Citizens of over 95 countries are eligible for visa-free entry into the State of Qatar. How long you are allowed to stay will depend on where you're from, so best to check beforehand. Ideally with an authorised entity, because the terms and conditions that apply can be different per country. To make it easy for you, fill in the field below and press the button to find out if you need a Visa and if yes, which one.</p>
+                <br>
+                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#newModal">Learn more </button>
+            </div>
+            
+            <div class="col-lg-2"></div>
+            <div class="row gx-1">
+                <div class="col-12 text-center mt-5">
+                            <h2>Find your visa to travel to Qatar</h2>
+                        </div>
+                        
+                        <div class="col-lg-2 col-md-1"></div>
+                        <div class="col-lg-4  col-md-5">
+                            <form class="mt-5">
+                                <label for="chooseCountry">Citizen of:</label>
+                                <select class="form-control selectstyle" name="" id="chooseCountry">
+                                    <option hidden>Choose your country</option>
+                                    <option>India</option>
+                                    <option>Usa</option>
+                                    <option>China</option>
+                                    <option>France</option>
+                                    <option>England</option>
+                                </select>
+                            </form>
+                            <form class="mt-5">
+                                <label for="chooseCountry">Resident of:</label>
+                                <select class="form-control selectstyle" name="" id="chooseCountry">
+                                    <option hidden>Choose your country</option>
+                                    <option>India</option>
+                                    <option>Usa</option>
+                                    <option>China</option>
+                                    <option>France</option>
+                                    <option>England</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="col-lg-4  col-md-5">
+                            <form class="mt-5">
+                                <label for="chooseCountry">Purpose:</label><br>
+                               <div class="btn-group" role="group">
+                                <input type="radio" class="btn-check" id="radio1" name="purpose">
+                                <label for="radio1" class="btn btn-outline-danger radiobtnstyle">Leisure</label>
+
+                                <input type="radio" class="btn-check" id="radio2" name="purpose">
+                                <label for="radio2" class="btn btn-outline-danger radiobtnstyle">Business</label>
+
+                                <input type="radio" class="btn-check" id="radio3" name="purpose">
+                                <label for="radio3" class="btn btn-outline-danger radiobtnstyle">Stopover</label>
+
+                               </div>
+                            </form>
+                            <form class="mt-5">
+                                <label for="chooseCountry">Duration:</label><br>
+                                <div class="btn-group" role="group">
+                                    <input type="radio" class="btn-check" id="check1" name="dayStay">
+                                    <label for="check1" class="btn btn-outline-danger radiobtnstyle">&lt;90 days</label>
+
+                                    <input type="radio" class="btn-check" id="check2" name="dayStay">
+                                    <label for="check2" class="btn btn-outline-danger radiobtnstyle">&gt;90 days</label>
+
+                                    <input type="radio" class="btn-check" id="check3" name="dayStay">
+                                    <label for="check3" class="btn btn-outline-danger radiobtnstyle">&lt;150 days</label>
+                                </div>
+                            </form>
+                            
+                        </div>
+                        <div class="col-lg-2  col-md-1"></div>
+                        <div class="col-12 text-center mt-5">
+                            <a href="" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#newModal"> Check requirements</a>
+                        </div>
+            </div >
+        </div>
+    </div>
+    <footer id="foot">
+        <div class="row mt-5 p-5 text-center">
+          <div class="col-lg-3 mb-4 col-sm-6">
+            <h3 class="mb-5 mt-5">Download our app</h3>
+            <a href="https://play.google.com/store/games?utm_source=apac_med&utm_medium=hasem&utm_content=Oct0121&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-in-1003227-med-hasem-py-Evergreen-Oct0121-Text_Search_BKWS-BKWS%7CONSEM_kwid_43700065205026385_creativeid_535350509687_device_c&gclid=Cj0KCQiA6LyfBhC3ARIsAG4gkF8TUEUv2khJi2ByU5lC0k-mk__ODAdh5GFl8L7bfN9JvobvyQXYPv0aAjswEALw_wcB&gclsrc=aw.ds" class="btn btn-dark appdownbtn"><i class="bi bi-google-play"><span> GET IT ON</span> <br> <span>Google Play</span></i></a>
+            <br><br>
+            <a href="https://www.apple.com/in/app-store/" class="btn btn-dark appdownbtn"><i class="bi bi-apple"></i><span> Download on the</span> <br> <span>App Store</span></i></a>
+          </div>
+          <div class="col-lg-3 mb-4 col-sm-6">
+            <h3 class="mb-5 mt-5">Follow</h3>
+            <a class="text-decoration-none footerlink" href="https://www.facebook.com/login/"><i class="bi bi-facebook"></i> Facebook</a><br><br>
+            <a class="text-decoration-none footerlink" href="https://www.instagram.com/"><i class="bi bi-instagram"></i> Instagram</a><br><br>
+            <a class="text-decoration-none footerlink" href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i class="bi bi-twitter"></i> Twitter</a><br><br>
+            <a class="text-decoration-none footerlink" href="https://www.youtube.com/"><i class="bi bi-youtube"></i> YouTube</a><br><br>
+            <a class="text-decoration-none footerlink" href="https://www.tiktok.com/about"><i class="bi bi-tiktok"></i> TikTok</a><br><br>
+          </div>
+          <div class="col-lg-3 mb-4 col-sm-6">
+            <h3 class="mb-5 mt-5">Contact</h3>
+            <a class="text-decoration-none footerlink" href="mailto:abc@gmail.com">Contact us</a>
+            <br>
+            <br>
+            <a class="text-decoration-none footerlink" href="mailto:abc@gmail.com">Media Center</a>
+          </div>
+          <div class="col-lg-3 mb-4 col-sm-6">
+            <h3 class="mb-5 mt-5">Information</h3>
+            <a class="text-decoration-none footerlink" href="privacyPolicy.html">Terms & conditions</a><br><br>
+            <a class="text-decoration-none footerlink" href="privacyPolicy.html">Privacy notice</a><br><br>
+            <a class="text-decoration-none footerlink" href="privacyPolicy.html">Corporate website notice</a><br><br>
+            <a class="text-decoration-none footerlink" href="privacyPolicy.html">Cookie Policy</a><br><br>
+          </div>
+        </div>
+      </footer>
+    
+</body>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+  ></script>
+</html>
